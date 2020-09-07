@@ -1,0 +1,20 @@
+{
+  "name": "platzivideo",
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }],
+  "env": {
+    "DB_USER": "@pv-db-user",
+    "DB_PASSWORD": "@pv-db-password",
+    "DB_HOST": "@pv-db-host",
+    "DB_NAME": "@pv-db-name",
+
+    "DEFAULT_ADMIN_PASSWORD": "@pv-dafault-admin-password",
+    "DEFAULT_USER_PASSWORD": "@pv-dafault-user-password",
+
+    "AUTH_JWT_SECRET": "@pv-auth-jwt-secret",
+
+    "PUBLIC_API_KEY_TOKEN": "@pv-public-api-key-token",
+    "ADMIN_API_KEY_TOKEN": "@pv-admin-api-key-token"
+  }
+}
